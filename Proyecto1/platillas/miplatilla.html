@@ -5,5 +5,11 @@
     </h1>
     <p>El nombre quien esta haciendo el proyecto es: {{nombre_persona}}{{apellido_persona}}</p>
     <p>La fecha del d&iacute;a: {{momento_actual.day}}</p>
+    <p>Temas del curso:</p>
+    <p>
+        {% for elTema in temas_curso %}
+            <p>{{elTema}}</p>
+        {% endfor %}
+    </p>
     </body>
     </html>
